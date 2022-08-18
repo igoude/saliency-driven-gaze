@@ -1,0 +1,29 @@
+If you need to rebuild the saliency_wrapper, read the following instructions:
+
+1) Install
+- cmake >= 3.4 (agree cmake in environment variables)
+- Visual Studio C++ >= 2019
+- Libtorch >= 1.9
+- OpenCV >= 4.5
+- CUDA >= 10.2
+- cuDNN >= 7 (compatible with CUDA version)
+
+2) ENVIRONMENT VARIABLES
+- (USER) Path: \path\to\CMake\bin
+- (USER) Path: \path\to\OpenCV\build\include
+- (USER) Path: \path\to\OpenCV\build\x64\vc15\bin
+- (USER) Path: \path\to\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin
+- (SYSTEM) CUDA_PATH=\path\to\NVIDIA GPU Computing Toolkit\CUDA\v10.2
+- (SYSTEM) CUDA_PATH_V10_2=\path\to\NVIDIA GPU Computing Toolkit\CUDA\v10.2
+
+3) Copy
+- cuDNN dlls (bin folder) to CUDA bin folder (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin)
+- cuDNN headers (include folder) to CUDA include folder (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include)
+- cuDNN libs (lib folder) to CUDA lib folder (C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64)
+
+4) Build (from a terminal in this folder: "..\Multi-map Saliency-driven Gaze behavior\Saliency wrapper")
+- cmake ./build -DCMAKE_PREFIX_PATH=/path/to/Libtorch -DCMAKE_GENERATOR_PLATFORM=x64  ..
+- cmake --build . --config Release
+
+5) Copy
+- saliency_wrapper.dll (in Release folder) to \path\to\your\Unreal Project\Binaries\Win64
