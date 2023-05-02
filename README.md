@@ -3,7 +3,7 @@
 Unreal Engine project of [Multi-map Saliency-driven Gaze Behavior for Virtual Characters](https://hal.science/hal-03796523v2). <br/>
 In this work, we propose a general method to synthesize gaze behaviors for interactive characters by combining models of *visual saliency*, *saccadic movements*, and *eye-head animation*, while enabling designers to finely control customizable features.
 
-> "Multi-map Saliency-driven Gaze Behavior for Virtual Characters; I. Goudé, A. Bruckert, A.H. Olivier, J.Pettré, R. Cozot, K. Bouatouch, M. Christie, L. Hoyet; in submission process; https://doi.org/10.1109/TVCG.2023.3244679" -->
+> "Multi-map Saliency-driven Gaze Behavior for Virtual Characters; I. Goudé, A. Bruckert, A.H. Olivier, J.Pettré, R. Cozot, K. Bouatouch, M. Christie, L. Hoyet; in submission process; https://doi.org/10.1109/TVCG.2023.3244679"
 
 ## Requirements
 
