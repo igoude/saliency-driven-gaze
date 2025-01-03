@@ -17,7 +17,7 @@ Visual Studio $\ge$ 2022 + [plugins](https://docs.unrealengine.com/4.26/en-US/Pr
 ## Install
 <ol>
     <li> Install requirements </li>
-    <li> Download the [Unreal project](https://drive.google.com/file/d/1bj_HXSZBHFqv5-c9mSFLYpd63nBMO1RB/view?usp=sharing) </li>
+    <li> Download the Unreal project: https://drive.google.com/file/d/1bj_HXSZBHFqv5-c9mSFLYpd63nBMO1RB/view?usp=sharing </li>
     <li> Right click on Saliency_driven_gaze.uproject -> Generate Visual Studio project files </li>
     <li> Open and build the project solution </li>
     <li> Open Unreal project and run Lobby_demo level </li>
