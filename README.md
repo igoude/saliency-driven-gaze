@@ -5,19 +5,23 @@ In this work, we propose a general method to synthesize gaze behaviors for inter
 
 > "Multi-map Saliency-driven Gaze Behavior for Virtual Characters; I. Goudé, A. Bruckert, A.H. Olivier, J.Pettré, R. Cozot, K. Bouatouch, M. Christie, L. Hoyet; in submission process; https://doi.org/10.1109/TVCG.2023.3244679"
 
+## UPDATE - Project supported on UE 5.5.1
+We recently updated our project to UE 5.5.1 to ease the reproductibility of our results.
+The saliency map inference is now performed by the native Neural Network Engine (NNE) plugin.
+We released a demo to demonstrate our real-time model as well.
+
 ## Requirements
+Unreal Engine $\ge$ 5.5.1 <br/>
+Visual Studio $\ge$ 2022 + [plugins](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/DevelopmentSetup/VisualStudioSetup/) <br/>
 
-Unreal Engine $\ge$ 5.0.3 <br/>
-Visual Studio  $\ge$ 2019 + [plugins](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/DevelopmentSetup/VisualStudioSetup/) <br/>
-.NET Core 3.1 SDK <br/>
-Libtorch $\ge$ 1.9 <br/>
-OpenCV $\ge$ 4.5 <br/>
-Cuda $\ge$ 10.2 <br/>
-cuDNN (compatible with cuda version)
-
-> <strong>⚠️WARNING: With Unreal Engine 5.0.3, a deadlock happens when loading opencv_world453.dll</strong> <br/>
-A fix exists but requires to build Unreal from source and to bytepatch a function, please visit: <br/>
-[the Unreal forum with the fix explained](https://forums.unrealengine.com/t/fplatformprocess-getdllhandle-causes-deadlock-when-loading-opencv-world/571735), and [the github of the guy if you need more details](https://github.com/wongfei/ue4-mediapipe-plugin/commit/c502349e4c0c8960cebbbd294397a157c38e00a1)
+## Install
+<ol>
+    <li> Install requirements </li>
+    <li> Download the Unreal project (zip or 'git clone') </li>
+    <li> Right click on Saliency_driven_gaze.uproject -> Generate Visual Studio project files </li>
+    <li> Build the Visual Studio project </li>
+    <li> Open Unreal project and run Lobby_demo level </li>
+</ol>
 
 ## Results
 
